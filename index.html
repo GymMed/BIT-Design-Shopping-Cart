@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Bootstrap Work</title>
+
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <section class="bg-purple p-5 h-100">
+            <div class="row rounded-3 bg-light shadow">
+                <div class="col-9 p-5">
+                    <div
+                        class="shop-header mb-2 ps-2 d-flex justify-content-between align-items-center"
+                    >
+                        <h1 class="fw-bold">Shopping Cart</h1>
+                        <div
+                            class="count text-secondary"
+                            id="shopping-items-count"
+                        >
+                            3 items
+                        </div>
+                    </div>
+                    <div class="shop-body">
+                        <table
+                            class="shop-table table table-light border-top border-secondary-subtle"
+                        >
+                            <tbody
+                                class="border-top border-secondary-subtle"
+                            ></tbody>
+                        </table>
+                    </div>
+                    <div class="shop-footer">
+                        <button class="btn d-flex align-items-center gap-2">
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="16"
+                                height="16"
+                                fill="currentColor"
+                                class="bi bi-arrow-left"
+                                viewBox="0 0 16 16"
+                            >
+                                <path
+                                    fill-rule="evenodd"
+                                    d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"
+                                />
+                            </svg>
+                            <div>Back to shop</div>
+                        </button>
+                    </div>
+                </div>
+                <div
+                    class="summary col-3 bg-gray rounded-end-3 p-5 text-secondary d-flex flex-column"
+                >
+                    <div
+                        class="summary__header fs-4 mb-4 fw-bold text-secondary"
+                    >
+                        Summary
+                    </div>
+                    <form
+                        action=""
+                        class="summary__form d-flex flex-column h-100 border-top border-secondary-subtle pt-3"
+                    >
+                        <div
+                            class="summary__form__calculations d-flex flex-column gap-4 border-top-1 border-bottom-1 border-secondary-subtle"
+                        >
+                            <div
+                                class="d-flex justify-content-between fs-5 fw-semibold calculations-count-wrapper"
+                            >
+                                <div
+                                    id="count-items"
+                                    class="count-wrapper__text"
+                                >
+                                    ITEMS 3
+                                </div>
+                                <div
+                                    class="count-wrapper__price"
+                                    id="count-price"
+                                >
+                                    &euro; 132.00
+                                </div>
+                            </div>
+                            <div
+                                class="summary__form__calculations__shipping-info fs-5 fw-semibold"
+                            >
+                                <div class="shipping-info__text mb-3">
+                                    SHIPPING
+                                </div>
+                                <div class="shipping-info__select">
+                                    <select
+                                        class="form-select bg-transparent"
+                                        id="floatingSelect"
+                                        aria-label="Floating label select example"
+                                    ></select>
+                                </div>
+                            </div>
+                            <div
+                                class="summary__form__calculations__discount fs-5 fw-semibold"
+                            >
+                                <div class="discount__text mb-3">GIVE CODE</div>
+                                <div class="discount__code">
+                                    <input
+                                        type="text"
+                                        class="form-control bg-transparent"
+                                        placeholder="Enter your code"
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="summary__form__footer border-top border-secondary-subtle pt-3 mt-3 justify-content-between d-flex flex-column h-100 mt-2 border-top-1 fw-semibold fs-5"
+                        >
+                            <div
+                                class="summary__form__footer__total-price-wrapper d-flex justify-content-between align-items-center"
+                            >
+                                <div class="total-price-wrapper__text">
+                                    TOTAL PRICE
+                                </div>
+                                <div
+                                    class="total-price-wrapper__price"
+                                    id="total-price"
+                                >
+                                    &euro; 137.00
+                                </div>
+                            </div>
+                            <button
+                                type="button"
+                                class="w-100 btn btn-dark fw-semibold shadow"
+                            >
+                                REGISTER
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <script src="shippingType.js"></script>
+        <script src="item.js"></script>
+        <script src="script.js"></script>
+    </body>
+</html>
